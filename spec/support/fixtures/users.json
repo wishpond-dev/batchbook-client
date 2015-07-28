@@ -1,0 +1,6 @@
+{"users":
+  [{"id":5, "first_name":"eric", "last_name":"Krause", "email":"ekrause@batchblue.com", "role_id":3, "role":"advanced", "person_id":32},
+   {"id":1, "first_name":"Basic", "last_name":"BB2", "email":"basic@batchblue.com", "role_id":4, "role":"basic", "person_id":1},
+   {"id":3, "first_name":"Admin", "last_name":"BB2", "email":"admin@batchblue.com", "role_id":2, "role":"admin", "person_id":3},
+   {"id":2, "first_name":"Advanced", "last_name":"BB2", "email":"advanced@batchblue.com", "role_id":3, "role":"advanced", "person_id":2},
+   {"id":4, "first_name":"Owner", "last_name":"BB2", "email":"owner@batchblue.com", "role_id":1, "role":"owner", "person_id":4}]}

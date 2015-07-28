@@ -3,38 +3,40 @@ require "httparty"
 
 module Batchbook
   class Client
+    attr_reader :token, :user
+
     API_URL = "/api/v1/"
 
     def initialize(user, token)
-      @token = "?auth_token=#{token.to_s}"
-      @user = "#{user.to_s}#{API_URL}"
+      @token = "#{token}"
+      @user = "#{user}"
     end
 
     def ping
-      response = get_users
+      response = users
       !response.has_key?("error")
     end
 
-    def get_users(page = 1)
+    def users(page = 1)
       get_request("users", "&page=#{page}")
     end
 
-    def people_total
-      get_people["total"]
+    def custom_field_sets(page = 1)
+      get_request("custom_field_sets", "&page=#{page}")
     end
 
-    def get_people(page = 1)
+    def people(page = 1)
       get_request("people", "&page=#{page}")
     end
 
-    def post_person(data, endpoint = "people")
+    def create_person(data, endpoint = "people")
       post_request(data, endpoint)
     end
 
     private
 
     def uri_generator(endpoint, options = "")
-      "#{@user}#{endpoint}.json#{@token}#{options}"
+      "#{@user}#{API_URL}#{endpoint}.json?auth_token=#{@token}#{options}"
     end
 
     def get_request(endpoint, options = "")

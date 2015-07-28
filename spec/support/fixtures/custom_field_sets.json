@@ -1,0 +1,32 @@
+ {"custom_field_sets":
+  [{"id":2,
+    "name":"Event Attendee",
+    "description":"",
+    "custom_field_definitions_attributes":
+     [{"id":8, "name":"Title", "custom_field_type":"CustomField::Text", "options":{"primary":"1", "subfields":[]}, "position":2},
+      {"id":9, "name":"Date", "custom_field_type":"CustomField::Date", "options":{"primary":"2", "subfields":[]}, "position":3},
+      {"id":10, "name":"Invite sent?", "custom_field_type":"CustomField::Boolean", "options":{"subfields":[]}, "position":4},
+      {"id":11, "name":"RSVP", "custom_field_type":"CustomField::Boolean", "options":{"subfields":[]}, "position":5},
+      {"id":12, "name":"Attended?", "custom_field_type":"CustomField::Boolean", "options":{"subfields":[]}, "position":6},
+      {"id":13, "name":"Notes", "custom_field_type":"CustomField::Text", "options":{"primary":"2", "subfields":[]}, "position":7}]},
+   {"id":1,
+    "name":"Sample Custom Field Set",
+    "description":
+     "Here's a sample field set, to help spark ideas for your own perfect Custom Fields. Industry-specific terms, details you want to track for everyone or just a few, whatever works best for you! Watch a quick tutorial: http://batchbook.com/screencasts/custom-fields.html",
+    "custom_field_definitions_attributes":
+     [{"id":1,
+       "name":"Favorite Color?",
+       "custom_field_type":"CustomField::MultipleChoice",
+       "options":{"primary":"1", "subfields":["Candy apple red", "Atomic tangerine", "Blue"]},
+       "position":8},
+      {"id":2, "name":"Staff Contact", "custom_field_type":"CustomField::AssignedTo", "options":{"subfields":[]}, "position":9},
+      {"id":3, "name":"Rate per hour", "custom_field_type":"CustomField::Currency", "options":{"primary":"1", "subfields":[]}, "position":10},
+      {"id":4, "name":"Start Date", "custom_field_type":"CustomField::Date", "options":{"primary":"1", "subfields":[]}, "position":11},
+      {"id":5, "name":"Number of Employees", "custom_field_type":"CustomField::Number", "options":{"subfields":[]}, "position":12},
+      {"id":6, "name":"Email Signup?", "custom_field_type":"CustomField::Boolean", "options":{"subfields":[]}, "position":13},
+      {"id":7, "name":"Additional Notes", "custom_field_type":"CustomField::Text", "options":{"primary":"1", "subfields":[]}, "position":14}]},
+   {"id":3,
+    "name":"test_field",
+    "description":"test the api",
+    "custom_field_definitions_attributes":
+     [{"id":14, "name":"fav_electric_pokemon", "custom_field_type":"CustomField::Text", "options":{"primary":"1", "subfields":[]}, "position":1}]}]}
