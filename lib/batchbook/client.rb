@@ -34,7 +34,7 @@ module Batchbook
     end
 
     def update_person(data, id, options = "")
-      put_request(data, "/people/#{id}", options)
+      put_request(data, "people/#{id}", options)
     end
 
     private
